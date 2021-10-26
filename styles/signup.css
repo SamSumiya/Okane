@@ -1,0 +1,90 @@
+body {
+    background-image: url('../assets/budget.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 3em 1fr;
+    justify-content: center;
+}
+
+/* .bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 15em;
+} */
+
+.bottom-section {
+    background-color: #00b0b9c2;
+    color: white;
+    box-shadow: 10px 10px 0px 0px rgba(251,220,218,0.75);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(251,220,218,0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(251,220,218,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 50em;
+    max-width: 50em;
+    min-height: 20em;
+    max-height: 40em;
+    margin-top: 5em;
+}
+
+input {
+    border: none;
+    width: 5em;
+    height: 1.5em;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+button {
+    border: none;
+    width: 5em;
+    height: 1.5em;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #FED9B7;
+    font-weight: 500;
+    color: black;
+}
+
+button:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: #ffb978;
+}
+
+h2, h3 {
+    /* margin-top: 0.3em; */
+    font-size: 3em;
+    font-weight: 600;
+}
+
+form {
+    margin-top: 1em;
+    padding-bottom: 2.5em;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 30em;
+}
+
+h2 {
+    padding-top: 0.6em;
+}
+

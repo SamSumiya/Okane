@@ -1,0 +1,280 @@
+/* organization between the left sidebar and the rest of the page, under the nav */
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+
+
+
+/* STYLING THE LEFT 1/4 OF THE PAGE */
+/* styling the side bar on the left */
+content {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 2em;
+    max-width: 14em;
+}
+
+/* where the user is greeted */
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 1em;
+}
+
+#userGreeting {
+    text-align: center;
+    width: 12em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #F07167;
+    font-weight: 600;
+    font-size: large;
+}
+
+/* styles the div on the left that has the form, apart from the welcome */
+.form-div {
+    background-color: #FED9B7;
+    height: 100%;
+    max-width: 14em;
+}
+
+/* styles the h3 and img where it says manage your okane */
+.manage {
+    display: flex;
+    background-color: #F07167;
+    height: 2.5em;
+    align-items: center;
+}
+
+/* styles the manage your okane words */
+.sidebar-title {
+    padding-top: 0.3em;
+    padding-left: 0.4em;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+/* styles the image next to the manage your okane words */
+.form-div div:nth-child(1) img {
+    margin-left: 0.5em;
+    height: 1.7em;
+    width: 1.7em;
+}
+
+/* styles the div that the form, button and img are in */
+.input-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* styling the form on the left that takes inputs from the user */
+/* places both the inputs and the selects next to each other */
+form {
+    padding: 0.8em;
+    /* separates form from the image at the bottom */
+    margin-bottom: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 13.5em;
+    flex-direction: column;
+}
+
+/* styles the div the form's inputs are in, making them flex boxes and aligning them on top of each other */
+.inputs {
+    max-width: 10em;
+}
+
+h6 {
+    margin-bottom: 0.2em;
+    margin-top: 1em;
+}
+
+/* styles the inputs themselves, determining width and height the user has to write stuff in */
+input {
+    border: none;
+    width: 12em;
+    height: 1.5em;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* styles the div the dropdown menus are in, making it a flex box, with the menus on top of each other with column, giving margin up top, and setting the max width for the whole div */
+.selects {
+    display: flex;
+    max-width: 10em;
+    flex-direction: column;
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles the dropdown menus themselves, setting width and height */
+select {
+    border: none;
+    width: 12em;
+    height: 1.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Rajdhani', sans-serif;
+    text-align-last: center;
+}
+
+option:nth-child(1) {
+    color: rgba(128, 128, 128, 0.487);
+}
+
+/* styles the button on the page */
+button {
+    border: none;
+    width: 5em;
+    height: 1.5em;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #00AFB9;
+    font-weight: 500;
+    color: white;
+}
+
+button:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: #F07167;
+}
+
+/* styles the image in the left sidebar */
+.side-bar-img img {
+    height: 10em;
+    margin-bottom: 1.5em;
+    opacity: .9;
+    margin-right: 1em;
+}
+
+
+
+
+/* STYLING THE RIGHT THREE FOURTS OF THE PAGE */
+/* styles the right side of the page separate from the left sidebar. this gives specific width to the user stats, and the bottom table and charts*/
+.right-main {
+    display: grid;
+    grid-template-rows: 3em 4fr;
+}
+
+/* where the users totals are displayed */
+.user-stats {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    background-color: #0081A7;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .4px;
+    height: 2.3em;
+}
+
+/* styles the box the table is contained in */
+.right-main-bottom {
+    margin-top: 0.3em;
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+/* styles the table cells */
+table {
+    border: darkgray 1px solid;
+    height: 100%;
+    margin-right: 0.5em;
+    max-height: 3em;
+}
+
+thead {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #00AFB9;
+    color: white;
+}
+
+th {
+    padding-top: 0.4em;
+    padding-left: 5px;
+    height: 1.2em;
+}
+
+tr {
+    height: 2em;
+    max-height: 2em;
+}
+
+table tr td {
+    border-bottom: 1px solid lightgray;
+    padding-top: 0.4em;
+    padding-left: 0.2em;
+}
+
+/* styles the div that contains the group of charts and their titles */
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* styling each div that contains the chart and title of the chart individually */
+.card {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* styles the individual headings on top of the charts */
+h5 {
+    margin-bottom: -0.3em;
+    background-color: #00AFB9;
+    color: white;
+    font-weight: 500;
+    height: 1.7em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0.4em;
+    width: 100%;
+}
+
+/* styling the boxes that JUST the charts are in */
+.canvas-div {
+    border: darkgray 1px solid;
+    border-top: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling the charts themselves */
+canvas {
+    max-height: 150px;
+    max-width: 150px;
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: 100%;
+}

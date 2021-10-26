@@ -1,0 +1,109 @@
+body {
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    /* padding-right: 3rem; */
+    width:100%;
+    height:100%;
+    max-width: 70rem;
+    /* max-height: fit-content; */
+    font-family: 'Rajdhani', sans-serif;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    background-image: url('../assets/budget.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-img {
+    width: 500px;
+    height: 300px;
+}
+
+.welcome-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo-name {
+    position:relative;
+}
+
+h1 {
+    z-index: 3;
+    font-size: 12em;
+    text-shadow: #fbdcdabb 5px 5px;
+    color: #F07167;
+    font-weight: 900;
+    text-align: center;
+}
+
+.bottom-welcome {
+    background-color: #00b0b9c2;
+    color: white;
+    box-shadow: 10px 10px 0px 0px rgba(251,220,218,0.75);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(251,220,218,0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(251,220,218,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 50em;
+    min-height: 15em;
+}
+
+h2, h3 {
+    /* margin-top: 0.3em; */
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.about-okane {
+    max-width: 40em;
+    margin-top: 1.5em;
+    text-align:left;
+    margin-bottom: 1em;
+}
+
+.signup-p {
+    margin-bottom: 2em;
+}
+
+h3 {
+    margin-bottom: 0.3em;
+}
+
+form {
+    margin-bottom: 0.3em;
+}
+
+input {
+    border: none;
+    width: 5em;
+    height: 1.5em;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+button {
+    border: none;
+    width: 5em;
+    height: 1.5em;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #FED9B7;
+    font-weight: 500;
+    color: black;
+}
+
+button:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: #ffb978;
+}
+
+h2 {
+    padding-top: 0.6em;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/results.css">
+    <title>Charts</title>
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <div class="left-nav-left">
+                <img class="main-logo" src="../assets/coin.png"/>
+            </div>
+            <div class="left-nav-right">
+                <h3 class="name-top">kane <span>お金</span></h3>
+            </div>
+        </div>
+        <div class="right-nav">
+            <div class="right-nav-left">
+                <a href="../about/index.html"><img class="about-us-img" src="../assets/team.png" /><figcaption>About</figcaption></a>
+            </div>
+            <div class="right-nav-left">
+                <a href="../dashboard/index.html"><img class="about-us-img" src="../assets/dash.png" /><figcaption>Dashboard</figcaption></a>
+            </div>
+            <div>
+                <a id="logout" href="../index.html"><img class="signup-img" src="../assets/logout.png" /><figcaption>Logout</figcaption></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1>Your Charts</h1>
+        <content>
+            <canvas id="expenses-chart" ></canvas>
+            <canvas id="income-chart" ></canvas>
+            <canvas id="subs-chart" ></canvas>
+        </content>
+    </main>
+    <footer>
+        <div class="gutter-top-div">
+            <div class="hr-left"></div>
+            <img class="gutter-img" src="../assets/coin.png" />
+            <div class="hr-right"></div>
+        </div>
+        <div class="copyright">&copy; Okane Project Group</div>
+    </footer>
+    <script src="./results.js" type="module"></script>
+</body>
+</html>

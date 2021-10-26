@@ -1,0 +1,40 @@
+canvas {
+    width: 300px;
+    height: 300px;
+}
+
+#expenses-chart {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#income-chart {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#subs-chart {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.3em;
+    font-size: 4em;
+    font-weight: 600;
+    color: #024255;
+    text-shadow: rgba(128, 128, 128, 0.282) 3px 3px; 
+}
+
+content {
+    padding: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 25px 23px 0px 4px rgba(251,220,218,0.55);
+    -webkit-box-shadow: 25px 23px 0px 4px rgba(251,220,218,0.55);
+    -moz-box-shadow: 25px 23px 0px 4px rgba(251,220,218,0.55);
+    border: 1px solid lightgray;
+}
